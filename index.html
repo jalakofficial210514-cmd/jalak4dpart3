@@ -131,6 +131,23 @@
     }
     .btn-primary:hover::after{opacity:1;animation:sweep 900ms cubic-bezier(.2,.6,.2,1) 1 forwards}
     .btn-secondary:hover{animation:bg-pan 1.4s ease-in-out infinite alternate;transform:translateY(-1px);border-color:rgba(255,255,255,.28)}
+    
+    /* Tombol VVIP (Tambahan) */
+    .btn-vvip{
+      grid-column: 1 / -1; /* Agar membagi dua kolom dan posisinya di tengah bawah */
+      background: linear-gradient(90deg, #7c5cff, #00f2ff, #7c5cff);
+      background-size: 200% 100%;
+      color: #ffffff;
+      border: 1px solid rgba(255,255,255,.4);
+      animation: bg-pan 3s linear infinite; 
+      box-shadow: 0 0 15px rgba(124, 92, 255, 0.4);
+    }
+    .btn-vvip:hover{
+      animation:bg-pan 1.4s ease-in-out infinite alternate;
+      transform:translateY(-1px);
+      border-color:rgba(255,255,255,.28);
+    }
+
     .btn:focus-visible{outline:0;box-shadow:0 0 0 6px var(--ring)}
     .btn:active{transform:translateY(0)}
 
@@ -433,6 +450,7 @@
     <div class="cta">
       <a href="https://mauaja.link/aksesmudahjalak" target="_blank" rel="noreferrer noopener" class="btn btn-primary">LOGIN</a>
       <a href="https://mauaja.link/aksesmudahjalak" target="_blank" rel="noreferrer noopener" class="btn btn-secondary">DAFTAR</a>
+      <a href="https://mauaja.link/aksesmudahjalak" target="_blank" rel="noreferrer noopener" class="btn btn-vvip">UPDATE ID VVIP</a>
     </div>
 
     <div class="badges">
